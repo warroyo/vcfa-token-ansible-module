@@ -1,0 +1,14 @@
+---
+- name: Get access token
+  hosts: localhost
+  tasks:
+  - name: Get access token from VCFA
+    vcfa_auth:
+      vcfa_host: "vcf-a.vcf.lab"
+      token: "LpIBk1Ed2K429c8rn8Nb8598je3sZC6M"
+      tenant: "will-org"
+      insecure: true
+    register: token_output
+  - name: Print the returns
+    ansible.builtin.debug:
+      var: token_output
