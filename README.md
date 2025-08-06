@@ -1,4 +1,4 @@
-# VCF Automation Token Andible Module
+# VCF Automation Token Ansible Module
 
 This is a simple module for ansible that will use a VCF Automation token and return an access token that can then be used in other modules such as the kubernetes module to connect to the VCF-A IaaS APIs.
 
